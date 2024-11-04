@@ -1,0 +1,50 @@
+:root{
+  --bg-color: #121212;
+  --container-color:#f4f5f7  ;
+  --accent-color: #2244ff;
+  --text-color: #ffffff;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.canvas{
+  background-color: var(--container-color);
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  height: 100%;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header, .footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem 2.5rem;
+}
+.main{
+  flex: 1;
+  display: flex;
+}
+#gameCanvas{
+  border: 1px solid hsl(225, 89%, 55%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 80%;
+  height: auto;
+  z-index: 1;
+}
+
+
